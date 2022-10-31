@@ -1,0 +1,363 @@
+[2022-10-30 20:20:26] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 20:20:26] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 20:20:26] [root:131 DEBUG] Logging queue listener started!
+[2022-10-30 20:20:26] [__main__:69 INFO] Parent logging
+[2022-10-30 20:20:26] [__main__:82 INFO] Parent logging: end
+[2022-10-30 20:20:42] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 20:20:42] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 20:20:42] [root:131 DEBUG] Logging queue listener started!
+[2022-10-30 20:20:42] [__main__:70 INFO] Parent logging
+[2022-10-30 20:20:42] [__main__:83 INFO] Parent logging: end
+[2022-10-30 20:22:59] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 20:22:59] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 20:22:59] [root:131 DEBUG] Logging queue listener started!
+[2022-10-30 20:22:59] [__main__:70 INFO] Parent logging
+[2022-10-30 20:22:59] [__main__:83 INFO] Parent logging: end
+[2022-10-30 20:24:33] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 20:24:33] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 20:24:33] [root:153 DEBUG] Logging server started!
+[2022-10-30 20:24:33] [__main__:70 INFO] Parent logging
+[2022-10-30 20:24:33] [__mp_main__:65 INFO] Process-1 Children Logging
+[2022-10-30 20:24:33] [__mp_main__:65 INFO] Process-2 Children Logging
+[2022-10-30 20:24:33] [__mp_main__:65 INFO] Process-3 Children Logging
+[2022-10-30 20:24:33] [__main__:83 INFO] Parent logging: end
+[2022-10-30 20:25:32] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 20:25:32] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 20:25:32] [root:153 DEBUG] Logging server started!
+[2022-10-30 20:25:32] [__main__:70 INFO] Parent logging
+[2022-10-30 20:25:32] [__mp_main__:65 INFO] Process-1 Children Logging
+[2022-10-30 20:25:32] [__mp_main__:65 INFO] Process-2 Children Logging
+[2022-10-30 20:25:32] [__mp_main__:65 INFO] Process-3 Children Logging
+[2022-10-30 20:25:32] [__main__:83 INFO] Parent logging: end
+[2022-10-30 20:26:08] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 20:26:08] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 20:26:08] [root:153 DEBUG] Logging server started!
+[2022-10-30 20:26:08] [__main__:70 INFO] Parent logging
+[2022-10-30 20:26:08] [logger_tt:157 WARNING] Process-1 Re-initializing logger_tt. "setup_logging()" should only be called one.
+[2022-10-30 20:26:08] [logger_tt:157 WARNING] Process-2 Re-initializing logger_tt. "setup_logging()" should only be called one.
+[2022-10-30 20:26:08] [logger_tt:157 WARNING] Process-3 Re-initializing logger_tt. "setup_logging()" should only be called one.
+[2022-10-30 20:26:08] [__mp_main__:65 INFO] Process-2 Children Logging
+[2022-10-30 20:26:08] [__mp_main__:65 INFO] Process-3 Children Logging
+[2022-10-30 20:26:18] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 20:26:18] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 20:26:23] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 20:26:23] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 20:26:23] [root:153 DEBUG] Logging server started!
+[2022-10-30 20:26:23] [__main__:70 INFO] Parent logging
+[2022-10-30 20:26:23] [logger_tt:157 WARNING] Process-1 Re-initializing logger_tt. "setup_logging()" should only be called one.
+[2022-10-30 20:26:23] [logger_tt:157 WARNING] Process-2 Re-initializing logger_tt. "setup_logging()" should only be called one.
+[2022-10-30 20:26:23] [logger_tt:157 WARNING] Process-3 Re-initializing logger_tt. "setup_logging()" should only be called one.
+[2022-10-30 20:26:23] [__main__:83 INFO] Parent logging: end
+[2022-10-30 20:26:33] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 20:26:33] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 20:26:33] [root:153 DEBUG] Logging server started!
+[2022-10-30 20:26:33] [__main__:69 INFO] Parent logging
+[2022-10-30 20:26:33] [__mp_main__:64 INFO] Process-1 Children Logging
+[2022-10-30 20:26:33] [__mp_main__:64 INFO] Process-2 Children Logging
+[2022-10-30 20:26:33] [__mp_main__:64 INFO] Process-3 Children Logging
+[2022-10-30 20:26:33] [__main__:82 INFO] Parent logging: end
+[2022-10-30 20:38:15] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 20:38:15] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 20:39:35] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 20:39:35] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 20:39:35] [root:153 DEBUG] Logging server started!
+[2022-10-30 20:39:35] [test:68 INFO] Parent logging
+[2022-10-30 20:39:36] [test:79 INFO] Parent logging: end
+[2022-10-30 20:52:20] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 20:52:20] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 20:52:20] [root:153 DEBUG] Logging server started!
+[2022-10-30 20:52:20] [__main__:83 INFO] Parent logging
+[2022-10-30 20:52:20] [__main__:96 INFO] Parent logging: end
+[2022-10-30 20:53:24] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 20:53:24] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 20:53:24] [root:153 DEBUG] Logging server started!
+[2022-10-30 20:53:24] [__main__:83 INFO] Parent logging
+[2022-10-30 20:53:24] [__main__:96 INFO] Parent logging: end
+[2022-10-30 20:53:43] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 20:53:43] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 20:53:43] [root:153 DEBUG] Logging server started!
+[2022-10-30 20:53:43] [__main__:83 INFO] Parent logging
+[2022-10-30 20:53:43] [__main__:96 INFO] Parent logging: end
+[2022-10-30 20:53:54] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 20:53:54] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 20:53:54] [root:153 DEBUG] Logging server started!
+[2022-10-30 20:53:54] [__main__:83 INFO] Parent logging
+[2022-10-30 20:53:54] [__main__:96 INFO] Parent logging: end
+[2022-10-30 21:05:02] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 21:05:02] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 21:05:02] [root:153 DEBUG] Logging server started!
+[2022-10-30 21:05:02] [__main__:83 INFO] Parent logging
+[2022-10-30 21:05:02] [__main__:94 INFO] Parent logging: end
+[2022-10-30 21:05:47] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 21:05:47] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 21:05:47] [root:153 DEBUG] Logging server started!
+[2022-10-30 21:05:47] [root:36 ERROR] Uncaught exception:
+Traceback (most recent call last):
+  File "mp_logging.py", line 68, in <module>
+    raise RuntimeError("Invalid method")
+     => __name__ = '__main__'
+     => __doc__ = None
+     => __package__ = None
+     => __loader__ = <_frozen_importlib_external.SourceFileLoader object at 0x7fc3b36e3100>
+     => __spec__ = None
+     => __annotations__ = {}
+     => __builtins__ = <module 'builtins' (built-in)>
+     => __file__ = 'mp_logging.py'
+     => __cached__ = None
+     => mp = <module 'multiprocessing' from '/home/eduardo/anaconda3/envs/test/lib/python3.8/multiprocessing/__init__.py'>
+     => METHOD = 2
+     => logging = <module 'logging' from '/home/eduardo/anaconda3/envs/test/lib/python3.8/logging/__init__.py'>
+     => setup_logging = <function setup_logging at 0x7fc3b32c03a0>
+     => logger = <ExceptionLogger logger_tt (DEBUG)>
+     => configure_logger = <function configure_logger at 0x7fc3b372e280>
+RuntimeError: Invalid method
+[2022-10-30 21:06:21] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 21:06:21] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 21:06:21] [root:153 DEBUG] Logging server started!
+[2022-10-30 21:06:21] [root:36 ERROR] Uncaught exception:
+Traceback (most recent call last):
+  File "mp_logging.py", line 67, in <module>
+    raise RuntimeError("Invalid method")
+     => __name__ = '__main__'
+     => __doc__ = None
+     => __package__ = None
+     => __loader__ = <_frozen_importlib_external.SourceFileLoader object at 0x7f010cb4d100>
+     => __spec__ = None
+     => __annotations__ = {}
+     => __builtins__ = <module 'builtins' (built-in)>
+     => __file__ = 'mp_logging.py'
+     => __cached__ = None
+     => mp = <module 'multiprocessing' from '/home/eduardo/anaconda3/envs/test/lib/python3.8/multiprocessing/__init__.py'>
+     => METHOD = 2
+     => logging = <module 'logging' from '/home/eduardo/anaconda3/envs/test/lib/python3.8/logging/__init__.py'>
+     => setup_logging = <function setup_logging at 0x7f010c7083a0>
+     => logger = <ExceptionLogger logger_tt (DEBUG)>
+     => configure_logger = <function configure_logger at 0x7f010cb98280>
+RuntimeError: Invalid method
+[2022-10-30 21:06:40] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 21:06:40] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 21:06:40] [root:153 DEBUG] Logging server started!
+[2022-10-30 21:06:40] [__main__:79 INFO] Parent logging
+[2022-10-30 21:06:40] [__main__:90 INFO] Parent logging: end
+[2022-10-30 21:08:46] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 21:08:46] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 21:08:46] [root:153 DEBUG] Logging server started!
+[2022-10-30 21:08:46] [test:72 INFO] Parent logging
+[2022-10-30 21:08:46] [test:83 INFO] Parent logging: end
+[2022-10-30 21:09:47] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 21:09:47] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 21:09:47] [root:153 DEBUG] Logging server started!
+[2022-10-30 21:09:47] [test:75 INFO] Parent logging
+[2022-10-30 21:09:47] [test:86 INFO] Parent logging: end
+[2022-10-30 21:10:01] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 21:10:01] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 21:10:01] [root:153 DEBUG] Logging server started!
+[2022-10-30 21:10:01] [test:75 INFO] Parent logging
+[2022-10-30 21:10:01] [test:86 INFO] Parent logging: end
+[2022-10-30 21:12:35] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 21:12:35] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 21:12:35] [root:153 DEBUG] Logging server started!
+[2022-10-30 21:12:35] [test:75 INFO] Parent logging
+[2022-10-30 21:12:35] [test:86 INFO] Parent logging: end
+[2022-10-30 21:34:07] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 21:34:07] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 21:34:07] [root:153 DEBUG] Logging server started!
+[2022-10-30 21:34:07] [root:36 ERROR] Uncaught exception:
+Traceback (most recent call last):
+  File "mp_logging.py", line 79, in <module>
+    logger = logging.getLogger('test')
+     |-> logger = <ExceptionLogger logger_tt (DEBUG)>
+     |-> logging.getLogger = '!!! Not Exists'
+     => __name__ = '__main__'
+     => __doc__ = None
+     => __package__ = None
+     => __loader__ = <_frozen_importlib_external.SourceFileLoader object at 0x7f5cd9e14100>
+     => __spec__ = None
+     => __annotations__ = {}
+     => __builtins__ = <module 'builtins' (built-in)>
+     => __file__ = 'mp_logging.py'
+     => __cached__ = None
+     => mp = <module 'multiprocessing' from '/home/eduardo/anaconda3/envs/test/lib/python3.8/multiprocessing/__init__.py'>
+     => sys = <module 'sys' (built-in)>
+     => METHOD = 2
+     => setup_logging = <function setup_logging at 0x7f5cd99f23a0>
+     => configure_logger = <function configure_logger at 0x7f5cd9e5f280>
+     => configure_loguru = <function configure_loguru at 0x7f5cd99f25e0>
+NameError: name 'logging' is not defined
+[2022-10-30 21:35:09] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 21:35:09] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 21:35:09] [root:153 DEBUG] Logging server started!
+[2022-10-30 21:35:09] [root:36 ERROR] Uncaught exception:
+Traceback (most recent call last):
+  File "mp_logging.py", line 79, in <module>
+    logger = logging.getLogger('test')
+     |-> logger = <ExceptionLogger logger_tt (DEBUG)>
+     |-> logging.getLogger = '!!! Not Exists'
+     => __name__ = '__main__'
+     => __doc__ = None
+     => __package__ = None
+     => __loader__ = <_frozen_importlib_external.SourceFileLoader object at 0x7f4108111100>
+     => __spec__ = None
+     => __annotations__ = {}
+     => __builtins__ = <module 'builtins' (built-in)>
+     => __file__ = 'mp_logging.py'
+     => __cached__ = None
+     => mp = <module 'multiprocessing' from '/home/eduardo/anaconda3/envs/test/lib/python3.8/multiprocessing/__init__.py'>
+     => sys = <module 'sys' (built-in)>
+     => METHOD = 2
+     => setup_logging = <function setup_logging at 0x7f4107cef3a0>
+     => configure_logger = <function configure_logger at 0x7f410815c280>
+     => configure_loguru = <function configure_loguru at 0x7f4107cef5e0>
+NameError: name 'logging' is not defined
+[2022-10-30 21:37:47] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 21:37:47] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 21:37:47] [root:153 DEBUG] Logging server started!
+[2022-10-30 21:37:47] [root:36 ERROR] Uncaught exception:
+Traceback (most recent call last):
+  File "mp_logging.py", line 79, in <module>
+    logger = logging.getLogger('test')
+     |-> logger = <ExceptionLogger logger_tt (DEBUG)>
+     |-> logging.getLogger = '!!! Not Exists'
+     => __name__ = '__main__'
+     => __doc__ = None
+     => __package__ = None
+     => __loader__ = <_frozen_importlib_external.SourceFileLoader object at 0x7f117fe3d100>
+     => __spec__ = None
+     => __annotations__ = {}
+     => __builtins__ = <module 'builtins' (built-in)>
+     => __file__ = 'mp_logging.py'
+     => __cached__ = None
+     => mp = <module 'multiprocessing' from '/home/eduardo/anaconda3/envs/test/lib/python3.8/multiprocessing/__init__.py'>
+     => sys = <module 'sys' (built-in)>
+     => METHOD = 2
+     => setup_logging = <function setup_logging at 0x7f117fa1b3a0>
+     => configure_logger = <function configure_logger at 0x7f117fe88280>
+     => configure_loguru = <function configure_loguru at 0x7f117fa1b5e0>
+NameError: name 'logging' is not defined
+[2022-10-30 21:38:23] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 21:38:23] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 21:38:23] [root:153 DEBUG] Logging server started!
+[2022-10-30 21:38:23] [__main__:97 INFO] Parent logging
+[2022-10-30 21:38:23] [__main__:108 INFO] Parent logging: end
+[2022-10-30 21:38:43] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 21:38:43] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 21:38:43] [root:153 DEBUG] Logging server started!
+[2022-10-30 21:38:43] [__main__:97 INFO] Parent logging
+[2022-10-30 21:38:43] [__main__:108 INFO] Parent logging: end
+[2022-10-30 21:41:28] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 21:41:28] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 21:41:28] [root:153 DEBUG] Logging server started!
+[2022-10-30 21:41:28] [__main__:100 INFO] Parent logging
+[2022-10-30 21:41:28] [__mp_main__:95 INFO] Process-1 Children Logging
+[2022-10-30 21:41:28] [__mp_main__:95 INFO] Process-2 Children Logging
+[2022-10-30 21:41:28] [__mp_main__:95 INFO] Process-3 Children Logging
+[2022-10-30 21:41:28] [__main__:111 INFO] Parent logging: end
+[2022-10-30 21:50:59] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 21:50:59] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 21:50:59] [root:153 DEBUG] Logging server started!
+[2022-10-30 21:50:59] [__main__:100 INFO] Parent logging
+[2022-10-30 21:50:59] [__mp_main__:95 INFO] SpawnProcess-2 Children Logging
+[2022-10-30 21:50:59] [__mp_main__:95 INFO] SpawnProcess-1 Children Logging
+[2022-10-30 21:50:59] [__mp_main__:95 INFO] SpawnProcess-3 Children Logging
+[2022-10-30 21:50:59] [__main__:114 INFO] Parent logging: end
+[2022-10-30 21:53:52] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 21:53:52] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 21:53:52] [root:153 DEBUG] Logging server started!
+[2022-10-30 21:53:52] [__main__:100 INFO] Parent logging
+[2022-10-30 21:53:52] [logger_tt:157 WARNING] ForkProcess-1 Re-initializing logger_tt. "setup_logging()" should only be called one.
+[2022-10-30 21:53:52] [logger_tt:157 WARNING] ForkProcess-2 Re-initializing logger_tt. "setup_logging()" should only be called one.
+[2022-10-30 21:53:52] [__mp_main__:88 INFO] ForkProcess-1 Children Logging
+[2022-10-30 21:53:52] [logger_tt:157 WARNING] ForkProcess-3 Re-initializing logger_tt. "setup_logging()" should only be called one.
+[2022-10-30 21:53:52] [__mp_main__:88 INFO] ForkProcess-2 Children Logging
+[2022-10-30 21:53:52] [__mp_main__:88 INFO] ForkProcess-3 Children Logging
+[2022-10-30 21:53:52] [__main__:111 INFO] Parent logging: end
+[2022-10-30 22:06:18] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 22:06:18] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 22:06:18] [root:153 DEBUG] Logging server started!
+[2022-10-30 22:06:18] [__main__:100 INFO] Parent logging
+[2022-10-30 22:06:18] [__mp_main__:88 INFO] ForkProcess-1 Children Logging
+[2022-10-30 22:06:18] [__mp_main__:88 INFO] ForkProcess-2 Children Logging
+[2022-10-30 22:06:18] [__mp_main__:88 INFO] ForkProcess-3 Children Logging
+[2022-10-30 22:06:18] [__main__:111 INFO] Parent logging: end
+[2022-10-30 22:06:29] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 22:06:29] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 22:06:29] [root:153 DEBUG] Logging server started!
+[2022-10-30 22:06:29] [__main__:97 INFO] Parent logging
+[2022-10-30 22:06:29] [__mp_main__:85 INFO] ForkProcess-1 Children Logging
+[2022-10-30 22:06:29] [__mp_main__:85 INFO] ForkProcess-2 Children Logging
+[2022-10-30 22:06:29] [__mp_main__:85 INFO] ForkProcess-3 Children Logging
+[2022-10-30 22:06:29] [__main__:108 INFO] Parent logging: end
+[2022-10-30 22:06:48] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 22:06:48] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 22:06:48] [root:153 DEBUG] Logging server started!
+[2022-10-30 22:06:48] [__main__:96 INFO] Parent logging
+[2022-10-30 22:06:48] [__main__:107 INFO] Parent logging: end
+[2022-10-30 22:07:46] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 22:07:46] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 22:07:46] [root:153 DEBUG] Logging server started!
+[2022-10-30 22:07:46] [__main__:91 INFO] Parent logging
+[2022-10-30 22:07:47] [__main__:102 INFO] Parent logging: end
+[2022-10-30 22:07:59] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 22:07:59] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 22:07:59] [root:153 DEBUG] Logging server started!
+[2022-10-30 22:07:59] [__main__:91 INFO] Parent logging
+[2022-10-30 22:07:59] [__mp_main__:80 INFO] ForkProcess-1 Children Logging
+[2022-10-30 22:07:59] [__mp_main__:80 INFO] ForkProcess-2 Children Logging
+[2022-10-30 22:07:59] [__mp_main__:80 INFO] ForkProcess-3 Children Logging
+[2022-10-30 22:07:59] [__main__:102 INFO] Parent logging: end
+[2022-10-30 22:08:40] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 22:08:40] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 22:08:40] [root:153 DEBUG] Logging server started!
+[2022-10-30 22:08:40] [__main__:92 INFO] Parent logging
+[2022-10-30 22:08:40] [__mp_main__:81 INFO] SpawnProcess-1 Children Logging
+[2022-10-30 22:08:40] [__mp_main__:81 INFO] SpawnProcess-3 Children Logging
+[2022-10-30 22:08:40] [__mp_main__:81 INFO] SpawnProcess-2 Children Logging
+[2022-10-30 22:08:40] [__main__:103 INFO] Parent logging: end
+[2022-10-30 22:09:27] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 22:09:27] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 22:09:27] [root:153 DEBUG] Logging server started!
+[2022-10-30 22:09:27] [__main__:92 INFO] Parent logging
+[2022-10-30 22:09:27] [__mp_main__:81 INFO] SpawnProcess-1 Children Logging
+[2022-10-30 22:09:27] [__mp_main__:81 INFO] SpawnProcess-2 Children Logging
+[2022-10-30 22:09:27] [__mp_main__:81 INFO] SpawnProcess-3 Children Logging
+[2022-10-30 22:09:27] [__main__:103 INFO] Parent logging: end
+[2022-10-30 22:10:47] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 22:10:47] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 22:10:47] [root:153 DEBUG] Logging server started!
+[2022-10-30 22:10:47] [__main__:91 INFO] Parent logging
+[2022-10-30 22:10:47] [__mp_main__:82 INFO] SpawnProcess-2 Children Logging
+[2022-10-30 22:10:47] [__mp_main__:82 INFO] SpawnProcess-3 Children Logging
+[2022-10-30 22:10:47] [__mp_main__:82 INFO] SpawnProcess-1 Children Logging
+[2022-10-30 22:10:47] [__main__:102 INFO] Parent logging: end
+[2022-10-30 22:10:56] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 22:10:56] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 22:10:56] [root:153 DEBUG] Logging server started!
+[2022-10-30 22:10:56] [__main__:92 INFO] Parent logging
+[2022-10-30 22:10:56] [__mp_main__:83 INFO] ForkProcess-1 Children Logging
+[2022-10-30 22:10:56] [__mp_main__:83 INFO] ForkProcess-2 Children Logging
+[2022-10-30 22:10:56] [__mp_main__:83 INFO] ForkProcess-3 Children Logging
+[2022-10-30 22:10:56] [__main__:103 INFO] Parent logging: end
+[2022-10-30 22:15:06] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 22:15:06] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 22:15:06] [root:153 DEBUG] Logging server started!
+[2022-10-30 22:15:06] [test_logging:91 INFO] Parent logging
+[2022-10-30 22:15:06] [test_logging:79 INFO] ForkProcess-1 Children Logging
+[2022-10-30 22:15:06] [test_logging:79 INFO] ForkProcess-2 Children Logging
+[2022-10-30 22:15:06] [test_logging:79 INFO] ForkProcess-3 Children Logging
+[2022-10-30 22:15:06] [test_logging:102 INFO] Parent logging: end
+[2022-10-30 22:19:36] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 22:19:36] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 22:19:36] [root:153 DEBUG] Logging server started!
+[2022-10-30 22:19:36] [test_logging:91 INFO] Parent logging
+[2022-10-30 22:19:36] [test_logging:79 INFO] SpawnProcess-1 Children Logging
+[2022-10-30 22:19:36] [test_logging:79 INFO] SpawnProcess-2 Children Logging
+[2022-10-30 22:19:36] [test_logging:79 INFO] SpawnProcess-3 Children Logging
+[2022-10-30 22:19:36] [test_logging:102 INFO] Parent logging: end
+[2022-10-30 22:19:46] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 22:19:46] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 22:19:46] [root:153 DEBUG] Logging server started!
+[2022-10-30 22:19:46] [test_logging:91 INFO] Parent logging
+[2022-10-30 22:19:46] [test_logging:79 INFO] ForkProcess-1 Children Logging
+[2022-10-30 22:19:46] [test_logging:79 INFO] ForkProcess-2 Children Logging
+[2022-10-30 22:19:46] [test_logging:79 INFO] ForkProcess-3 Children Logging
+[2022-10-30 22:19:46] [test_logging:102 INFO] Parent logging: end
