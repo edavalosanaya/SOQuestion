@@ -2,9 +2,9 @@ import multiprocessing as mp
 import sys
 
 # Selecting method
-LOGGING_METHOD = 2
-START_METHOD = "fork"
+LOGGING_METHOD = 3
 # START_METHOD = "spawn"
+START_METHOD = "fork"
 
 # Imports
 if LOGGING_METHOD == 1:

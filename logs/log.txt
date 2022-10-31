@@ -361,3 +361,35 @@ NameError: name 'logging' is not defined
 [2022-10-30 22:19:46] [test_logging:79 INFO] ForkProcess-2 Children Logging
 [2022-10-30 22:19:46] [test_logging:79 INFO] ForkProcess-3 Children Logging
 [2022-10-30 22:19:46] [test_logging:102 INFO] Parent logging: end
+[2022-10-30 23:08:36] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 23:08:36] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 23:08:36] [root:153 DEBUG] Logging server started!
+[2022-10-30 23:08:36] [__main__:92 INFO] Parent logging
+[2022-10-30 23:08:36] [__mp_main__:83 INFO] SpawnProcess-1 Children Logging
+[2022-10-30 23:08:36] [__mp_main__:83 INFO] SpawnProcess-2 Children Logging
+[2022-10-30 23:08:36] [__mp_main__:83 INFO] SpawnProcess-3 Children Logging
+[2022-10-30 23:08:36] [__main__:103 INFO] Parent logging: end
+[2022-10-30 23:09:42] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 23:09:42] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 23:09:42] [root:153 DEBUG] Logging server started!
+[2022-10-30 23:09:42] [__main__:92 INFO] Parent logging
+[2022-10-30 23:09:42] [__mp_main__:83 INFO] SpawnProcess-1 Children Logging
+[2022-10-30 23:09:42] [__mp_main__:83 INFO] SpawnProcess-2 Children Logging
+[2022-10-30 23:09:42] [__mp_main__:83 INFO] SpawnProcess-3 Children Logging
+[2022-10-30 23:09:42] [__main__:103 INFO] Parent logging: end
+[2022-10-30 23:11:01] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 23:11:01] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 23:11:01] [root:153 DEBUG] Logging server started!
+[2022-10-30 23:11:01] [__main__:92 INFO] Parent logging
+[2022-10-30 23:11:01] [__mp_main__:83 INFO] SpawnProcess-1 Children Logging
+[2022-10-30 23:11:01] [__mp_main__:83 INFO] SpawnProcess-2 Children Logging
+[2022-10-30 23:11:01] [__mp_main__:83 INFO] SpawnProcess-3 Children Logging
+[2022-10-30 23:11:01] [__main__:103 INFO] Parent logging: end
+[2022-10-30 23:15:03] [root:185 DEBUG] _________________New log started__________________
+[2022-10-30 23:15:03] [root:186 DEBUG] Log config file: /home/eduardo/anaconda3/envs/test/lib/python3.8/site-packages/logger_tt/log_config.json
+[2022-10-30 23:15:03] [root:153 DEBUG] Logging server started!
+[2022-10-30 23:15:03] [test_logging:91 INFO] Parent logging
+[2022-10-30 23:15:03] [test_logging:79 INFO] SpawnProcess-3 Children Logging
+[2022-10-30 23:15:03] [test_logging:79 INFO] SpawnProcess-2 Children Logging
+[2022-10-30 23:15:03] [test_logging:79 INFO] SpawnProcess-1 Children Logging
+[2022-10-30 23:15:03] [test_logging:102 INFO] Parent logging: end
