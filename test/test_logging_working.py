@@ -6,51 +6,55 @@ from collections import deque
 import pickle
 import threading
 import multiprocessing as mp
+import platform
 
 import pytest
 from pytest_lazyfixture import lazy_fixture
 
+def configure_logger():
 
-LOGGING_CONFIG = {
-    "version": 1,
-    "disable_existing_loggers": True,
-    "formatters": {
-        "standard": {
-            "format": "%(asctime)s [%(levelname)s] %(name)s: %(message)s",
-            "datefmt": "%Y-%m-%d %H:%M:%S",
+    LOGGING_CONFIG = {
+        "version": 1,
+        "disable_existing_loggers": True,
+        "formatters": {
+            "standard": {
+                "format": "%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+                "datefmt": "%Y-%m-%d %H:%M:%S",
+            },
         },
-    },
-    "handlers": {
-        "console": {
-            "level": "DEBUG",
-            "formatter": "standard",
-            "class": "logging.StreamHandler",
-            "stream": "ext://sys.stdout",  # Default is stderr
+        "handlers": {
+            "console": {
+                "level": "DEBUG",
+                "formatter": "standard",
+                "class": "logging.StreamHandler",
+                "stream": "ext://sys.stdout",  # Default is stderr
+            },
+            "datagram": {
+                "level": "DEBUG",
+                "formatter": "standard",
+                "class": "logging.handlers.DatagramHandler",
+                "host": "127.0.0.1",
+                "port": 5555
+            }
         },
-        "datagram": {
-            "level": "DEBUG",
-            "formatter": "standard",
-            "class": "logging.handlers.DatagramHandler",
-            "host": "127.0.0.1",
-            "port": 5555
-        }
-    },
-    "loggers": {
-        "": {
-            "handlers": ["console"],
-            "level": "DEBUG",
-            "propagate": True,
+        "loggers": {
+            "": {
+                "handlers": ["console"],
+                "level": "DEBUG",
+                "propagate": True,
+            },
+            "subprocess": {
+                "handlers": ["datagram"],
+                "level": "DEBUG",
+                "propagate": True
+            }
         },
-        "subprocess": {
-            "handlers": ["datagram"],
-            "level": "DEBUG",
-            "propagate": True
-        }
-    },
-}
+    }
 
-# Setup the logging configuration
-logging.config.dictConfig(LOGGING_CONFIG)
+    # Setup the logging configuration
+    logging.config.dictConfig(LOGGING_CONFIG)
+   
+configure_logger()
 
 @pytest.fixture
 def logreceiver():
@@ -110,7 +114,56 @@ def target_function():
         raise RuntimeError("Invalid multiprocessing spawn method.")
 
     # Test logging
-    logger.info("Children Logging")
+    logger.info(f"{mp.current_process().name} - Children Logging")
+
+# ctx = mp
+fctx = mp.get_context("fork")
+class CustomForkProcess(fctx.Process):
+
+    def get_logger(self) -> logging.Logger:
+        
+        # Depending on the type of process, get the logger
+        subclass = self.__class__.__bases__[0]
+        if subclass == mp.context.ForkProcess or (subclass == mp.context.Process and platform.system() == "Linux"):
+            logger = logging.getLogger("")
+        elif subclass == mp.context.SpawnProcess or (subclass == mp.context.Process and platform.system() != "Linux"):
+            logger = logging.getLogger("subprocess")
+        else:
+            raise RuntimeError("Invalid multiprocessing spawn method.")
+
+        return logger
+
+    def run(self):
+
+        # Get the logger
+        self.logger = self.get_logger()
+
+        # Test logging
+        self.logger.info(f"{mp.current_process().name} - Children Logging")
+
+sctx = mp.get_context("spawn")
+class CustomSpawnProcess(sctx.Process):
+
+    def get_logger(self) -> logging.Logger:
+        
+        # Depending on the type of process, get the logger
+        subclass = self.__class__.__bases__[0]
+        if subclass == mp.context.ForkProcess or (subclass == mp.context.Process and platform.system() == "Linux"):
+            logger = logging.getLogger("")
+        elif subclass == mp.context.SpawnProcess or (subclass == mp.context.Process and platform.system() != "Linux"):
+            logger = logging.getLogger("subprocess")
+        else:
+            raise RuntimeError("Invalid multiprocessing spawn method.")
+
+        return logger
+
+    def run(self):
+
+        # Get the logger
+        self.logger = self.get_logger()
+
+        # Test logging
+        self.logger.info(f"{mp.current_process().name} - Children Logging")
 
 
 @pytest.mark.parametrize(
@@ -120,8 +173,8 @@ def target_function():
         (lazy_fixture("logreceiver"), mp.get_context("fork")),
 
     ]
-    )
-def test_something(_logreceiver, ctx):
+)
+def test_target_function_in_process(_logreceiver, ctx):
 
     # Try different methods
     logger = logging.getLogger("")
@@ -130,6 +183,42 @@ def test_something(_logreceiver, ctx):
     ps = []
     for i in range(3):
         p = ctx.Process(target=target_function)
+        p.start()
+        ps.append(p)
+
+    for p in ps:
+        p.join()
+
+    logger.info("Parent logging: end")
+
+def test_spawn_custom_process(logreceiver):
+
+    # Try different methods
+    logger = logging.getLogger("")
+    logger.info("Parent logging")
+    logger.info(CustomSpawnProcess.__bases__)
+
+    ps = []
+    for i in range(3):
+        p = CustomSpawnProcess(target=target_function)
+        p.start()
+        ps.append(p)
+
+    for p in ps:
+        p.join()
+
+    logger.info("Parent logging: end")
+
+def test_fork_custom_process(logreceiver):
+
+    # Try different methods
+    logger = logging.getLogger("")
+    logger.info("Parent logging")
+    logger.info(CustomSpawnProcess.__bases__)
+
+    ps = []
+    for i in range(3):
+        p = CustomForkProcess(target=target_function)
         p.start()
         ps.append(p)
 
