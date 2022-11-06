@@ -50,6 +50,13 @@ Below is a collection of
         - [Multiprocessing + Loguru](https://loguru.readthedocs.io/en/stable/resources/recipes.html#compatibility-with-multiprocessing-using-enqueue-argument)
     - [Pytest](https://docs.pytest.org/en/7.1.x/how-to/logging.html)
 
+Other links that might be helpful:
+- [github/pytest: caplog fixture: capture log records from another process](https://github.com/pytest-dev/pytest/issues/3037)
+- [SO: Empty messages in caplog when logs emmited in a different process](https://stackoverflow.com/questions/63052171/empty-messages-in-caplog-when-logs-emmited-in-a-different-process)
+- [SO: Pytest capture not working - caplog and capsys are empty](https://stackoverflow.com/questions/61702794/pytest-capture-not-working-caplog-and-capsys-are-empty)
+- [GitHub Gist: mlog](https://gist.github.com/schlamar/7003737)
+- [Superfastpython: multiprocessing + python](https://superfastpython.com/multiprocessing-logging-in-python/#Example_Using_QueueHandler_and_a_Logging_Process)
+
 ## The Test
 
 First, I tried to see if three logging libraries (built-in `logging`, `logger_tt`, and `loguru`) worked with just multiprocessing, as done in `mp_logging.py`. In that file, there are 2 parameters `START_METHOD` and `LOGGING_METHOD`. 
