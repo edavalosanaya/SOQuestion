@@ -1,3 +1,4 @@
+from typing import Literal, Optional
 import logging
 import logging.handlers
 import logging.config
@@ -116,6 +117,55 @@ def target_function():
     # Test logging
     logger.info(f"{mp.current_process().name} - Children Logging")
 
+# ctx = mp.get_context("spawn")
+# ctx = mp
+class CustomProcess(mp.Process):
+
+    def __init__(self, context: Optional[Literal['spawn', 'fork']] = None):
+
+        # Mapping str to class
+        start_to_class_map = {
+            "fork": mp.context.ForkProcess,
+            "spawn": mp.context.SpawnProcess
+        }
+
+        # If no context is given, use the default 
+        if not context:
+            default = mp.get_start_method()
+            assert isinstance(default, str)
+            self.__class__.__bases__ = (start_to_class_map[default],)
+            self._context = default
+
+        else:
+            if context in mp.get_all_start_methods():
+                self._context = context
+                self.__class__.__bases__ = (start_to_class_map[context], )
+            else:
+                raise RuntimeError(f"Context: `{context}` invalid in {platform.system()}")
+
+        super().__init__(daemon=True)
+
+    def get_logger(self) -> logging.Logger:
+        
+        # Depending on the type of process, get the logger
+        if self._context == "spawn":
+            logger = logging.getLogger("subprocess")
+        elif self._context == "fork":
+            logger = logging.getLogger("")
+        else:
+            raise RuntimeError("Invalid multiprocessing spawn method.")
+
+        return logger
+
+    def run(self):
+
+        # Get the logger
+        self.logger = self.get_logger()
+
+        # Test logging
+        # self.logger.info(f"{mp.current_process().name} - Children Logging")
+        self.logger.info(f"{self.__class__.__bases__} - Children Logging")
+
 # ctx = mp
 fctx = mp.get_context("fork")
 class CustomForkProcess(fctx.Process):
@@ -219,6 +269,33 @@ def test_fork_custom_process(logreceiver):
     ps = []
     for i in range(3):
         p = CustomForkProcess(target=target_function)
+        p.start()
+        ps.append(p)
+
+    for p in ps:
+        p.join()
+
+    logger.info("Parent logging: end")
+
+@pytest.mark.parametrize(
+    "_logreceiver, ctx",
+    [
+        (lazy_fixture("logreceiver"), None),
+        (lazy_fixture("logreceiver"), "spawn"),
+        (lazy_fixture("logreceiver"), "fork"),
+
+    ]
+)
+def test_change_custom_process(_logreceiver, ctx):
+
+    # Try different methods
+    logger = logging.getLogger("")
+    logger.info("Parent logging")
+    
+
+    ps = []
+    for i in range(3):
+        p = CustomProcess(context=ctx)
         p.start()
         ps.append(p)
 
